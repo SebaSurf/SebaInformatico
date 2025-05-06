@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido a Seba Informático</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #00ff99;
+      font-family: 'Courier New', monospace;
+      background-image: url('https://i.imgur.com/oFf3CjZ.png'); /* fondo binario estilo hacker */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+    }
+
+    .fondo {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 50px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #00ff99;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #00ff99;
+      color: black;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      box-shadow: 0 0 15px #00ff99;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #00cc77;
+    }
+
+    #presentacion {
+      display: none;
+      margin-top: 40px;
+      max-width: 90%;
+      border: 4px solid #00ff99;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ff99;
+    }
+
+    .whatsapp {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #25D366;
+      margin-top: 40px;
+      transition: background 0.3s;
+    }
+
+    .whatsapp:hover {
+      background-color: #1ebc5c;
+    }
+
+    .whatsapp img {
+      width: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fondo">
+    <h1>¡Bienvenido a Seba Informático!</h1>
+    <p>Servicio Técnico - Diseño - Soluciones Digitales</p>
+
+    <button onclick="mostrar()">Ver Presentación</button>
+
+    <br><br>
+    <img id="presentacion" src="portada.png" alt="Presentación">
+
+    <br><br>
+    <!-- Botón WhatsApp con ícono -->
+    <a class="whatsapp" href="https://wa.me/56955348010" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      Contáctame por WhatsApp
+    </a>
+  </div>
+
+  <script>
+    function mostrar() {
+      document.getElementById('presentacion').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
